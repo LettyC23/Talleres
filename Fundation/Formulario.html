@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation Starter Template</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <form>
+    <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="medium-12 cell">
+        <h1>Becas para todos los alumnos del tec</h1>
+        <u1 class="menu" class="medium-12 cell" style="background-color: black;">
+          <li><a style="color: white; " href="inicio de sesion">Inicio de sesion</a></li>
+          <li><a style="color: white; " href="Registrarse">Registrarse</a></li>
+          <li><a style="color: white; " href="Ayuda">Ayuda</a></li>
+        </u1>
+      </div>
+      <div class="medium-6 cell">
+        <label>Nombres(s):
+          <input type="text" placeholder=".medium-6 cell">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label>Ap. paterno:
+          <input type="text" placeholder=".medium-6 cell">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label>Ap. materno:
+          <input type="text" placeholder=".medium-6 cell">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label>Numero de control:
+          <input type="text" placeholder=".medium-6 cell">
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label>Genero:
+          <select>
+            <option value="Seleccionar">(Seleccionar)</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </label>
+      </div>
+      <div class="medium-6 cell">
+        <label>Carrera:>
+          <select multiple>
+            <option value="Seleccionar">Seleccionar</option>
+            <option value="ISC">ISC</option>
+            <option value="MA">MA</option>
+            <option value="IIA">IIA</option>
+            <option value="CP">CP</option>
+            <option value="LA">LA</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    </div>
+  </form>
+
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <fieldset class="medium-4 cell">
+        <legend>Modalidad:</legend>
+        <input type="radio" name="modalidad" value="Escolarizado" id="Escolarizado" required> 
+        <label>Escolarizado</label>
+        <input type="radio" name="modalidad" value="Semi-escolarizado" id="Semi-escolarizado" required> 
+        <label>Semi-escolarizado</label>
+      </fieldset>
+      <fieldset class="medium-4 cell">
+        <legend>Aceptar terminos y condiciones</legend>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Acepto</label>
+      </fieldset>
+      <fieldset class="medium-4 cell">
+        <a class="button" style="background-color: black; color: white; href="#">Solicitar</a>
+      </fieldset>
+    </div>
+  </div>
+	
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+
+</html>

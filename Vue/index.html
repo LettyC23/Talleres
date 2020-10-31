@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{hola}}</h1>
+        <u1>
+            <li v-for="fruta of frutas">
+                {{fruta.nombre}} - {{fruta.cantidad}}
+                <span v-if="fruta.cantidad==0"> - sin stock</span>
+                <span v-else> - con stock</span>
+            </li>
+        </u1>
+    </div>
+
+    <h1>--------------------------------------</h1>
+    <div id="app-2">
+        <h2>{{hola}}</h2>
+        <button v-on:click="reverseMessage"></button>
+    </div>
+    <h1>--------------------------------------</h1>
+
+    <div id="app-3">
+        <h3>{{mensaje}}</h3>
+        <input v-model="mensaje">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="01.js"></script>
+</body>
+</html>
